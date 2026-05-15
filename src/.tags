@@ -1,0 +1,160 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+VK_USE_PLATFORM_WIN32_KHR	main.cpp	5;"	d	file:
+PROJECT_NAME	main.cpp	28;"	d	file:
+RPTErr_	main.cpp	30;"	d	file:
+RPTInfo_	main.cpp	31;"	d	file:
+rpt_vk_alloc	main.cpp	/^void* rpt_vk_alloc(void* p_userData, usize size, usize alignment, VkSystemAllocationScope scope) {$/;"	f
+rpt_vk_realloc	main.cpp	/^void* rpt_vk_realloc(void* p_userData, void* p_original, usize size, usize alignment, VkSystemAllocationScope scope) {$/;"	f
+rpt_vk_free	main.cpp	/^void rpt_vk_free(void* p_userData, void* p_original) {$/;"	f
+g_vkAllocator	main.cpp	/^const VkAllocationCallbacks g_vkAllocator = {$/;"	v
+vk_result_str	main.cpp	/^static const CStr vk_result_str(VkResult result) {$/;"	f	file:
+vk_check	main.cpp	/^static bool vk_check(VkResult result) {$/;"	f	file:
+ECustomFlagBits	main.cpp	/^enum ECustomFlagBits {$/;"	g	file:
+RPT_QUEUE_PRESENT_BIT	main.cpp	/^    RPT_QUEUE_PRESENT_BIT = 0x00000800,$/;"	e	enum:ECustomFlagBits	file:
+RPT_QUEUE_INVALID_BIT	main.cpp	/^    RPT_QUEUE_INVALID_BIT = 0xFFFFFFFF$/;"	e	enum:ECustomFlagBits	file:
+SSwapchainDetails	main.cpp	/^struct SSwapchainDetails {$/;"	s	file:
+noexcept	main.cpp	/^    SSwapchainDetails(VkPhysicalDevice device, VkSurfaceKHR surface) noexcept;$/;"	m	struct:SSwapchainDetails	file:
+m_capabilities	main.cpp	/^    VkSurfaceCapabilitiesKHR m_capabilities;$/;"	m	struct:SSwapchainDetails	file:
+m_formats	main.cpp	/^    Array_<VkSurfaceFormatKHR> m_formats;$/;"	m	struct:SSwapchainDetails	file:
+m_presentModes	main.cpp	/^    Array_<VkPresentModeKHR> m_presentModes;$/;"	m	struct:SSwapchainDetails	file:
+SSwapchain	main.cpp	/^struct SSwapchain {$/;"	s	file:
+SSwapchain	main.cpp	/^    SSwapchain() {}$/;"	f	struct:SSwapchain
+noexcept	main.cpp	/^    SSwapchain(VkDevice device, VkSurfaceKHR surface, const SSwapchainDetails& details) noexcept;$/;"	m	struct:SSwapchain	file:
+m_handle	main.cpp	/^    VkSwapchainKHR m_handle;$/;"	m	struct:SSwapchain	file:
+m_images	main.cpp	/^    Array_<VkImage> m_images;$/;"	m	struct:SSwapchain	file:
+m_imageViews	main.cpp	/^    Array_<VkImageView> m_imageViews;$/;"	m	struct:SSwapchain	file:
+m_format	main.cpp	/^    VkSurfaceFormatKHR m_format;$/;"	m	struct:SSwapchain	file:
+m_presentMode	main.cpp	/^    VkPresentModeKHR m_presentMode;$/;"	m	struct:SSwapchain	file:
+m_extent	main.cpp	/^    VkExtent2D m_extent;$/;"	m	struct:SSwapchain	file:
+m_capabilities	main.cpp	/^    VkSurfaceCapabilitiesKHR m_capabilities;$/;"	m	struct:SSwapchain	file:
+m_imageCount	main.cpp	/^    u32 m_imageCount;$/;"	m	struct:SSwapchain	file:
+destroy_vk_resources	main.cpp	/^void SSwapchain::destroy_vk_resources(VkDevice device) {$/;"	f	class:SSwapchain
+IRenderHardwareInterface	main.cpp	/^class IRenderHardwareInterface {};$/;"	c	file:
+CRHI_Vulkan	main.cpp	/^class CRHI_Vulkan : public IRenderHardwareInterface {$/;"	c	file:
+SQueue	main.cpp	/^    struct SQueue {$/;"	s	class:CRHI_Vulkan	file:
+m_handle	main.cpp	/^        VkQueue m_handle;$/;"	m	struct:CRHI_Vulkan::SQueue	file:
+m_familyIndex	main.cpp	/^        u32 m_familyIndex;$/;"	m	struct:CRHI_Vulkan::SQueue	file:
+m_queueIndex	main.cpp	/^        u32 m_queueIndex;$/;"	m	struct:CRHI_Vulkan::SQueue	file:
+mp_window	main.cpp	/^    SDL_Window* mp_window;$/;"	m	class:CRHI_Vulkan	file:
+m_instance	main.cpp	/^    VkInstance m_instance = VK_NULL_HANDLE;$/;"	m	class:CRHI_Vulkan	file:
+m_surface	main.cpp	/^    VkSurfaceKHR m_surface = VK_NULL_HANDLE;$/;"	m	class:CRHI_Vulkan	file:
+m_physicalDevice	main.cpp	/^    VkPhysicalDevice m_physicalDevice = VK_NULL_HANDLE;$/;"	m	class:CRHI_Vulkan	file:
+m_device	main.cpp	/^    VkDevice m_device = VK_NULL_HANDLE;$/;"	m	class:CRHI_Vulkan	file:
+m_queues	main.cpp	/^    TIntegralMap<VkQueueFlags, SQueue> m_queues;$/;"	m	class:CRHI_Vulkan	file:
+m_presentQueue	main.cpp	/^    SQueue m_presentQueue;$/;"	m	class:CRHI_Vulkan	file:
+m_swapchain	main.cpp	/^    SSwapchain m_swapchain;$/;"	m	class:CRHI_Vulkan	file:
+m_textureSampleDescriptorLayout	main.cpp	/^    VkDescriptorSetLayout m_textureSampleDescriptorLayout;$/;"	m	class:CRHI_Vulkan	file:
+m_descriptorPool	main.cpp	/^    VkDescriptorPool m_descriptorPool;$/;"	m	class:CRHI_Vulkan	file:
+m_validationLayersCount	main.cpp	/^    static constexpr u32 m_validationLayersCount = 3;$/;"	m	class:CRHI_Vulkan	file:
+m_validationLayers	main.cpp	/^    static constexpr const CStr m_validationLayers[m_validationLayersCount] = {$/;"	m	class:CRHI_Vulkan	file:
+m_extensionsCount	main.cpp	/^    static constexpr u32 m_extensionsCount = 4;$/;"	m	class:CRHI_Vulkan	file:
+m_deviceExtensions	main.cpp	/^    static constexpr const CStr m_deviceExtensions[m_extensionsCount] = {$/;"	m	class:CRHI_Vulkan	file:
+CRHI_Vulkan	main.cpp	/^CRHI_Vulkan::CRHI_Vulkan(SDL_Window* window) $/;"	f	class:CRHI_Vulkan
+~CRHI_Vulkan	main.cpp	/^CRHI_Vulkan::~CRHI_Vulkan() {$/;"	f	class:CRHI_Vulkan
+main	main.cpp	/^int main(int argc, char **argv) {$/;"	f
+Sys_Unix_Like_	prelude.h	14;"	d
+Sys_Win32_	prelude.h	16;"	d
+Sys_Arch_64_	prelude.h	25;"	d
+Sys_Arch_32_	prelude.h	27;"	d
+Data_Model_ILP32_	prelude.h	31;"	d
+Data_Model_LP64_	prelude.h	36;"	d
+DataModel_LLP64_	prelude.h	40;"	d
+u8	prelude.h	/^typedef unsigned char			u8;$/;"	t
+u16	prelude.h	/^typedef unsigned short int 		u16;$/;"	t
+u32	prelude.h	/^typedef unsigned int 			u32;$/;"	t
+u64	prelude.h	/^typedef unsigned long long int 	u64;$/;"	t
+usize	prelude.h	/^typedef size_t					usize;$/;"	t
+i8	prelude.h	/^typedef signed char 			i8;$/;"	t
+i16	prelude.h	/^typedef signed short int 		i16;$/;"	t
+i32	prelude.h	/^typedef signed int 				i32;$/;"	t
+i64	prelude.h	/^typedef signed long long int 	i64;$/;"	t
+isize	prelude.h	/^	typedef i64 isize;$/;"	t
+isize	prelude.h	/^	typedef i32 isize;$/;"	t
+f32	prelude.h	/^typedef float 		f32;$/;"	t
+f64	prelude.h	/^typedef double 		f64;$/;"	t
+f128	prelude.h	/^typedef long double f128;$/;"	t
+U32IndexNone_	prelude.h	66;"	d
+CStr	prelude.h	68;"	d
+CStrConst	prelude.h	69;"	d
+CStrArray	prelude.h	70;"	d
+CStrArrayConst	prelude.h	71;"	d
+cstring	prelude.h	73;"	d
+cstring_const	prelude.h	74;"	d
+NoOp_	prelude.h	76;"	d
+Assert_	prelude.h	78;"	d
+Assert_	prelude.h	80;"	d
+Recast_	prelude.h	83;"	d
+CSDLAllocator	rpt_allocators.h	/^class CSDLAllocator {$/;"	c
+value_type	rpt_allocators.h	/^	typedef T value_type;$/;"	t	class:CSDLAllocator
+noexcept	rpt_allocators.h	/^	CSDLAllocator() noexcept = default;$/;"	m	class:CSDLAllocator
+rebind	rpt_allocators.h	/^    struct rebind {$/;"	s	class:CSDLAllocator
+allocate	rpt_allocators.h	/^	constexpr T* allocate(usize size) {$/;"	f	class:CSDLAllocator
+allocate	rpt_allocators.h	/^	constexpr T* allocate(usize size, const void* hint) {$/;"	f	class:CSDLAllocator
+CAlignedSDLAllocator	rpt_allocators.h	/^class CAlignedSDLAllocator {$/;"	c
+value_type	rpt_allocators.h	/^	typedef T value_type;$/;"	t	class:CAlignedSDLAllocator
+noexcept	rpt_allocators.h	/^	CAlignedSDLAllocator() noexcept = default;$/;"	m	class:CAlignedSDLAllocator
+rebind	rpt_allocators.h	/^    struct rebind {$/;"	s	class:CAlignedSDLAllocator
+allocate	rpt_allocators.h	/^	constexpr T* allocate(usize size) {$/;"	f	class:CAlignedSDLAllocator
+allocate	rpt_allocators.h	/^	constexpr T* allocate(usize size, const void* hint) {$/;"	f	class:CAlignedSDLAllocator
+operator ==	rpt_allocators.h	/^bool operator==(const CAlignedSDLAllocator<T, ALIGN>& lhs, const CAlignedSDLAllocator<U, ALIGN>& rhs) {$/;"	f
+operator !=	rpt_allocators.h	/^bool operator!=(const CAlignedSDLAllocator<T, ALIGN>& lhs, const CAlignedSDLAllocator<U, ALIGN>& rhs) {$/;"	f
+CFileLoader	rpt_file.cpp	/^CFileLoader::CFileLoader() {}$/;"	f	class:CFileLoader
+~CFileLoader	rpt_file.cpp	/^CFileLoader::~CFileLoader() {$/;"	f	class:CFileLoader
+open	rpt_file.cpp	/^bool CFileLoader::open(const char* path, const char* cAccessStr) {$/;"	f	class:CFileLoader
+close	rpt_file.cpp	/^bool CFileLoader::close() {$/;"	f	class:CFileLoader
+read_file	rpt_file.cpp	/^const char* CFileLoader::read_file(usize* bytesRead) {$/;"	f	class:CFileLoader
+CFileLoader	rpt_file.h	/^class CFileLoader {$/;"	c
+m_fileHandle	rpt_file.h	/^	FILE* m_fileHandle = nullptr;$/;"	m	class:CFileLoader
+m_cache	rpt_file.h	/^	char* m_cache = nullptr;$/;"	m	class:CFileLoader
+m_bufferSize	rpt_file.h	/^	usize m_bufferSize = 0;$/;"	m	class:CFileLoader
+TIntegralMap	rpt_integral_map.h	/^class TIntegralMap {$/;"	c
+Entry	rpt_integral_map.h	/^	typedef std::pair<u64, Value> Entry;$/;"	t	class:TIntegralMap
+TIntegralMap	rpt_integral_map.h	/^	TIntegralMap() {}$/;"	f	class:TIntegralMap
+TIntegralMap	rpt_integral_map.h	/^	TIntegralMap(usize capacity) : m_capacity(capacity) {}$/;"	f	class:TIntegralMap
+contains	rpt_integral_map.h	/^	bool contains(const Key& key) const {$/;"	f	class:TIntegralMap
+get	rpt_integral_map.h	/^	std::optional<const Value&> get(const Key& key) const {$/;"	f	class:TIntegralMap
+get_mut	rpt_integral_map.h	/^	std::optional<Value&> get_mut(const Key& key) {$/;"	f	class:TIntegralMap
+try_add	rpt_integral_map.h	/^	bool try_add(const Key& key, const Value& value) {$/;"	f	class:TIntegralMap
+force_add	rpt_integral_map.h	/^	void force_add(const Key& key, const Value& value) {$/;"	f	class:TIntegralMap
+try_remove	rpt_integral_map.h	/^	bool try_remove(const Key& key) {$/;"	f	class:TIntegralMap
+try_set_capacity	rpt_integral_map.h	/^	bool try_set_capacity(usize newCapacity) {$/;"	f	class:TIntegralMap
+m_capacity	rpt_integral_map.h	/^	usize m_capacity = 0;$/;"	m	class:TIntegralMap
+m_numElements	rpt_integral_map.h	/^	usize m_numElements = 0;$/;"	m	class:TIntegralMap
+m_data	rpt_integral_map.h	/^	Entry* m_data = nullptr;$/;"	m	class:TIntegralMap
+internal_add	rpt_integral_map.h	/^	bool internal_add(const Key& key, const Value& value, bool forceAdd = false) {$/;"	f	class:TIntegralMap
+find_nearest_index	rpt_integral_map.h	/^	usize find_nearest_index(const Key& key, bool& isExactMatch) {$/;"	f	class:TIntegralMap
+RPTMath	rpt_math.h	/^namespace RPTMath {$/;"	n
+max	rpt_math.h	/^	constexpr T max(T a, T b) { $/;"	f	namespace:RPTMath
+initialize	rpt_slang.cpp	/^void CSlangCompiler::initialize() {$/;"	f	class:CSlangCompiler
+load_module	rpt_slang.cpp	/^void CSlangCompiler::load_module(const char* moduleName, const char* modulePath) {$/;"	f	class:CSlangCompiler
+log_diagnostic	rpt_slang.cpp	/^void CSlangCompiler::log_diagnostic(slang::IBlob* diagnosticBlob) {$/;"	f	class:CSlangCompiler
+TextureModule_	rpt_slang.h	10;"	d
+TextureVertexEntryPoint_	rpt_slang.h	11;"	d
+TextureFragmentEntryPoint_	rpt_slang.h	12;"	d
+CSlangCompiler	rpt_slang.h	/^class CSlangCompiler {$/;"	c
+CSlangCompiler	rpt_slang.h	/^	CSlangCompiler() {}$/;"	f	class:CSlangCompiler
+thread_initialize	rpt_slang.h	/^	static i32 thread_initialize(void* inSelf) {$/;"	f	class:CSlangCompiler
+m_globalSession	rpt_slang.h	/^	Slang::ComPtr<slang::IGlobalSession> m_globalSession;$/;"	m	class:CSlangCompiler
+m_localSession	rpt_slang.h	/^	Slang::ComPtr<slang::ISession> m_localSession;$/;"	m	class:CSlangCompiler
+m_modules	rpt_slang.h	/^	TIntegralMap<symbol, Slang::ComPtr<slang::IModule>> m_modules;$/;"	m	class:CSlangCompiler
+m_shaders	rpt_slang.h	/^	TIntegralMap<symbol, Slang::ComPtr<slang::IBlob>> m_shaders;$/;"	m	class:CSlangCompiler
+SSymbol	rpt_symbol.cpp	/^SSymbol::SSymbol(const char* string) {$/;"	f	class:SSymbol
+SSymbol	rpt_symbol.cpp	/^SSymbol::SSymbol() $/;"	f	class:SSymbol
+SSymbol	rpt_symbol.cpp	/^SSymbol::SSymbol(const SSymbol& other)$/;"	f	class:SSymbol
+SSymbol	rpt_symbol.cpp	/^SSymbol::SSymbol(u64 inValue)$/;"	f	class:SSymbol
+SSymbol	rpt_symbol.h	/^class SSymbol {$/;"	c
+operator u64	rpt_symbol.h	/^	explicit operator u64() const { return value; }$/;"	f	class:SSymbol
+operator =	rpt_symbol.h	/^	inline SSymbol& operator=(const SSymbol& other) {$/;"	f	class:SSymbol
+hash	rpt_symbol.h	/^	static constexpr u64 hash(const char* str) {$/;"	f	class:SSymbol
+operator ==	rpt_symbol.h	/^	inline bool operator==(const SSymbol& other) {$/;"	f	class:SSymbol
+operator !=	rpt_symbol.h	/^	inline bool operator!=(const SSymbol& other) {$/;"	f	class:SSymbol
+value	rpt_symbol.h	/^	u64 value;$/;"	m	class:SSymbol
+SSymbolHash	rpt_symbol.h	/^struct SSymbolHash {$/;"	s
+Invalid_	rpt_symbol.h	/^const static SSymbol Invalid_ = SSymbol(~0ULL);$/;"	v
+Sym_	rpt_symbol.h	57;"	d
+symbol	rpt_symbol.h	/^typedef SSymbol symbol;/;"	t

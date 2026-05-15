@@ -1,0 +1,10 @@
+subprojects/
+.ark*
+build.bat
+meson.build
+native_config.ini
+ctags.tags
+tags
+build
+assets/shaders/build
+external/vulkan/Lib
